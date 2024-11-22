@@ -107,6 +107,44 @@ header h1 {
   border-top: 1px solid var(--main-color);
 }
 
+/****** Search bar ***********/
+.search-bar-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.search-bar-section h2 {
+  margin-bottom: 0.25em;
+}
+
+.search-bar-section p {
+  margin-bottom: 1em;
+}
+
+.search-bar i {
+  color: black; /* Couleur des icônes de recherche */
+  background-color: var(--main-bg-color) /* Couleur de fond des icônes */;
+  padding: 1em; /* Marges internes */
+  border-radius: 10px 0px 0px 10px; /* Arrondi à gauche */
+}
+
+.search-bar input {
+  border: 0.5px solid var(--main-bg-color); /* Ajoute une bordure légère */
+  font-weight: bold;
+  padding: 0 1em; /* Ajoute de l'espace autour du texte */
+}
+
+.search-bar button {
+  background-color: var(--main-color); /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  font-weight: bold; /* Texte en gras */
+  font-size: 14px; /* Taille de police */
+  padding: 1em; /* Marges internes */
+  border-radius: 0px 10px 10px 0px; /* Arrondi à droite */
+  border: none; /* Supprime la bordure par défaut */
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
