@@ -108,17 +108,17 @@ header h1 {
 }
 
 /****** Search bar ***********/
-.search-bar-section {
+.search-bar-div {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
 }
 
-.search-bar-section h2 {
+.search-bar-div h2 {
   margin-bottom: 0.25em;
 }
 
-.search-bar-section p {
+.search-bar-div p {
   margin-bottom: 1em;
 }
 
@@ -143,6 +143,49 @@ header h1 {
   padding: 1em; /* Marges internes */
   border-radius: 0px 10px 10px 0px; /* Arrondi à droite */
   border: none; /* Supprime la bordure par défaut */
+}
+
+/****** Filter ***********/
+.filters-div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.filters {
+  margin-bottom: 1.5em;
+}
+
+.filters span {
+  font-weight: bold; /* Met le texte des filtres en gras */
+  margin-right: 0.5em; /* Espace entre les éléments */
+}
+
+.filters i {
+  margin-right: 5px; /* Espace entre l'icône et le texte */
+}
+
+.filters button {
+  background-color: white;
+  font-weight: bold;
+  font-size: 14px; /* Taille de police */
+  border: 2px solid var(--main-bg-color); /* Ajoute une bordure légère */
+  border-radius: 25px; /* Coins arrondis */
+  padding: 15px; /* Marges internes */
+  margin-right: 10px; /* Espace entre les filtres */
+}
+
+.filters button:last-child {
+  margin-right: 0; /* Supprime la marge à droite du dernier élément */
+}
+
+.filters-information {
+  font-size: 14px; /* Taille de police */
+}
+
+.filters button:hover {
+  background-color: var(--filter-bg-color); /* Couleur de fond au survol */
 }
 
 /****** Hebergements And Populaires ***********/
