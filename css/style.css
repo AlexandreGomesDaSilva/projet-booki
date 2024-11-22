@@ -244,7 +244,7 @@ header h1 {
   margin-top: 5px; /* Ajoute un petit espace en haut des paragraphes */
 }
 
-.card-rating {
+.hebergements-cards .card-rating {
   margin: 0px 0px 5px 10px; /* Ajoute des marges autour de la note */
 }
 
@@ -327,7 +327,7 @@ header h1 {
   border-top-right-radius: 20px; /* Arrondi en haut à droite */
 }
 
-.activites-card p {
+.activites-card h3 {
   padding: 0; /* Supprime les marges internes */
   margin: 1em; /* Ajoute une marge autour du texte */
   font-weight: bold; /* Texte en gras */
