@@ -206,6 +206,46 @@ header h1 {
   width: 65%;
 }
 
+.hebergements button {
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hebergements-title {
+  margin-bottom: 1.5em;
+}
+
+.hebergements-cards {
+  display: flex; /* Utilise flexbox pour aligner les cartes */
+  flex-wrap: wrap; /* Passe à la ligne si nécessaire */
+  justify-content: space-between; /* Espacement uniforme entre les cartes */
+}
+
+.hebergements-cards a {
+  width: 30%; /* Largeur des liens de cartes */
+  margin: 0px 0px 2em 0px;
+}
+
+.hebergements-cards img {
+  width: 100%; /* Largeur des images dans les cartes */
+  height: 136px; /* Hauteur fixe des images */
+  border-top-left-radius: 20px; /* Arrondi en haut à gauche */
+  border-top-right-radius: 20px; /* Arrondi en haut à droite */
+}
+
+.card-informations {
+  margin: 5px 0 5px 10px; /* Marge autour du texte */
+}
+
+.card-informations p {
+  margin-top: 5px;
+}
+
+.card-rating {
+  margin: 0px 0px 5px 10px; /* Marge autour de la note */
+}
+
 /****** Populaires ***********/
 .populaires {
   width: 32%;
