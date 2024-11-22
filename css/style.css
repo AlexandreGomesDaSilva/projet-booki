@@ -206,10 +206,8 @@ header h1 {
   width: 65%;
 }
 
-.hebergements button {
-  border: none;
+.hebergements-showmore {
   font-weight: bold;
-  font-size: 14px;
 }
 
 .hebergements-title {
