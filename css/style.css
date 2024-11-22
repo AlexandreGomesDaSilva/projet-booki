@@ -1,29 +1,31 @@
 /****** General ***********/
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif; /* Définit la police par défaut pour tous les éléments */
 }
 
 :root {
-  --main-color: #0065fc;
-  --main-bg-color: #f2f2f2;
-  --filter-bg-color: #deebff;
+  --main-color: #0065fc; /* Définit une variable CSS pour la couleur principale */
+  --main-bg-color: #f2f2f2; /* Variable pour la couleur de fond principale */
+  --filter-bg-color: #deebff; /* Variable pour la couleur de fond des filtres */
 }
 
 .fa-solid {
-  color: var(--main-color);
+  color: var(
+    --main-color
+  ); /* Applique la couleur principale aux icônes font-awesome */
 }
 
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
+  margin: 0; /* Supprime les marges par défaut du body */
+  display: flex; /* Utilise flexbox pour aligner le contenu */
+  justify-content: center; /* Centre horizontalement le contenu */
 }
 
 .main-container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 50px;
-  box-sizing: border-box;
+  width: 100%; /* Prend toute la largeur possible */
+  max-width: 1440px; /* Limite la largeur maximale */
+  padding: 0 50px; /* Ajoute des marges internes horizontales */
+  box-sizing: border-box; /* Inclut les marges et les bordures dans le calcul des dimensions */
 }
 
 p,
@@ -33,300 +35,365 @@ h3,
 h4,
 h5,
 h6 {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-start: 0; /* Supprime les marges au début des blocs */
+  margin-block-end: 0; /* Supprime les marges à la fin des blocs */
 }
 
 a,
-nav {
-  margin: 0;
-  color: inherit;
-  text-decoration: none;
-  list-style-type: none;
+ul {
+  margin: 0; /* Supprime les marges */
+  color: inherit; /* Hérite la couleur du texte environnant */
+  text-decoration: none; /* Supprime les soulignements des liens */
+  list-style-type: none; /* Supprime les puces des listes */
 }
 
 .section-title {
-  margin: 0;
-  font-size: 22px;
+  margin: 0; /* Supprime les marges */
+  font-size: 22px; /* Définit la taille de la police */
 }
 
 .card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white; /* Fond blanc pour les cartes */
+  border-radius: 20px; /* Coins arrondis */
+  padding: 5px; /* Ajoute des marges internes */
+  filter: drop-shadow(
+    0px 3px 15px rgba(0, 0, 0, 0.1)
+  ); /* Ajoute une ombre légère */
 }
 
 .card img {
-  object-fit: cover;
+  object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le cadre sans déformation */
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 16px; /* Définit la taille de la police des titres des cartes */
 }
 
 .euro {
-  font-weight: 700;
+  font-weight: 700; /* Met le texte en gras */
 }
 
 .neutral-star {
-  color: var(--main-bg-color);
+  color: var(--main-bg-color); /* Définit la couleur des étoiles neutres */
 }
 
 /****** Header ***********/
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2em;
+  display: flex; /* Utilise flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espace égal entre les éléments */
+  align-items: center; /* Aligne verticalement les éléments */
+  margin-bottom: 2em; /* Ajoute de l'espace sous le header */
 }
 
 header h1 {
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--main-color); /* Définit la couleur du texte pour le titre */
-  margin: 1em 0 0 0; /* Marge en haut de 1em, et 0 pour les autres côtés */
+  font-size: 22px; /* Taille du titre */
+  font-weight: 500; /* Poids moyen pour le texte */
+  color: var(--main-color); /* Applique la couleur principale */
+  margin: 1em 0 0 0; /* Ajoute une marge supérieure et supprime les autres marges */
 }
 
 .header-nav {
-  display: flex;
+  display: flex; /* Aligne les éléments de navigation horizontalement */
 }
 
 .header-nav a {
-  padding: 10px 0px;
-  border-top: 1px solid transparent;
-  transition: all 0.3s;
+  padding: 10px 0px; /* Ajoute des marges internes verticales */
+  border-top: 1px solid transparent; /* Bordure invisible pour un effet au survol */
+  transition: all 0.3s; /* Animation douce sur les changements */
 }
 
 .header-nav a:last-child {
-  margin-left: 20px;
+  margin-left: 20px; /* Espace supplémentaire pour le dernier élément */
 }
 
 .header-nav a:hover {
-  color: var(--main-color);
-  border-top: 1px solid var(--main-color);
+  color: var(--main-color); /* Change la couleur au survol */
+  border-top: 1px solid var(--main-color); /* Ajoute une bordure colorée au survol */
 }
 
 /****** Search bar ***********/
 .search-bar-div {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2em;
+  display: flex; /* Aligne les éléments de la barre de recherche */
+  flex-direction: column; /* Organise verticalement */
+  margin-bottom: 2em; /* Ajoute de l'espace sous la barre */
 }
 
 .search-bar-div h2 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.25em; /* Réduit l'espace sous le titre */
 }
 
 .search-bar-div p {
-  margin-bottom: 1em;
+  margin-bottom: 1em; /* Espace sous le paragraphe */
 }
 
 .search-bar i {
-  color: black; /* Couleur des icônes de recherche */
-  background-color: var(--main-bg-color) /* Couleur de fond des icônes */;
+  color: black; /* Couleur des icônes */
+  background-color: var(--main-bg-color); /* Fond des icônes */
   padding: 1em; /* Marges internes */
-  border-radius: 10px 0px 0px 10px; /* Arrondi à gauche */
+  border-radius: 10px 0px 0px 10px; /* Arrondi des coins à gauche */
 }
 
 .search-bar input {
-  border: 0.5px solid var(--main-bg-color); /* Ajoute une bordure légère */
-  font-weight: bold;
-  padding: 0 1em; /* Ajoute de l'espace autour du texte */
+  border: 0.5px solid var(--main-bg-color); /* Bordure légère */
+  font-weight: bold; /* Texte en gras */
+  padding: 0 1em; /* Marges internes latérales */
 }
 
 .search-bar button {
-  background-color: var(--main-color); /* Couleur de fond du bouton */
+  background-color: var(--main-color); /* Fond du bouton */
   color: white; /* Couleur du texte */
   font-weight: bold; /* Texte en gras */
-  font-size: 14px; /* Taille de police */
+  font-size: 14px; /* Taille de la police */
   padding: 1em; /* Marges internes */
-  border-radius: 0px 10px 10px 0px; /* Arrondi à droite */
-  border: none; /* Supprime la bordure par défaut */
+  border-radius: 0px 10px 10px 0px; /* Arrondi des coins à droite */
+  border: none; /* Supprime les bordures */
 }
 
 /****** Filter ***********/
 .filters-div {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-bottom: 2em;
+  display: flex; /* Aligne les filtres */
+  justify-content: flex-start; /* Aligne à gauche */
+  flex-direction: column; /* Organise verticalement */
+  margin-bottom: 2em; /* Ajoute de l'espace sous les filtres */
 }
 
 .filters {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5em; /* Ajoute de l'espace entre les sections de filtres */
 }
 
 .filters span {
-  font-weight: bold; /* Met le texte des filtres en gras */
-  margin-right: 0.5em; /* Espace entre les éléments */
+  font-weight: bold; /* Met en gras le texte des étiquettes de filtre */
+  margin-right: 0.5em; /* Ajoute un espace entre les éléments */
 }
 
 .filters i {
-  margin-right: 5px; /* Espace entre l'icône et le texte */
+  margin-right: 5px; /* Ajoute un espace entre l'icône et le texte */
 }
 
 .filters button {
-  background-color: white;
-  font-weight: bold;
-  font-size: 14px; /* Taille de police */
-  border: 2px solid var(--main-bg-color); /* Ajoute une bordure légère */
+  background-color: white; /* Fond blanc des boutons de filtre */
+  font-weight: bold; /* Texte en gras */
+  font-size: 14px; /* Taille de la police */
+  border: 2px solid var(--main-bg-color); /* Bordure légère */
   border-radius: 25px; /* Coins arrondis */
-  padding: 15px; /* Marges internes */
-  margin-right: 10px; /* Espace entre les filtres */
+  padding: 15px; /* Ajoute des marges internes */
+  margin-right: 10px; /* Espace entre les boutons de filtre */
 }
 
 .filters button:last-child {
-  margin-right: 0; /* Supprime la marge à droite du dernier élément */
+  margin-right: 0; /* Supprime l'espace pour le dernier bouton */
 }
 
 .filters-information {
-  font-size: 14px; /* Taille de police */
+  font-size: 14px; /* Taille de la police pour l'information des filtres */
 }
 
 .filters button:hover {
-  background-color: var(--filter-bg-color); /* Couleur de fond au survol */
+  background-color: var(--filter-bg-color); /* Change le fond au survol */
 }
 
-/****** Hebergements And Populaires ***********/
+/****** Hébergements And Populaires ***********/
 .hebergements-and-populaires {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Aligne les sections horizontalement */
+  justify-content: space-between; /* Espace uniforme entre les sections */
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
-  border-radius: 20px;
-  padding: 30px;
-  box-sizing: border-box;
+  background-color: var(--main-bg-color); /* Fond des sections */
+  border-radius: 20px; /* Coins arrondis */
+  padding: 30px; /* Ajoute des marges internes */
+  box-sizing: border-box; /* Inclut les bordures/marges dans la taille */
 }
 
-/****** Hebergements ***********/
+/****** Hébergements ***********/
 .hebergements {
-  width: 65%;
+  width: 65%; /* Définit la largeur de la section à 65% */
 }
 
 .hebergements-showmore {
-  font-weight: bold;
+  font-weight: bold; /* Met en gras le bouton "Afficher plus" */
 }
 
 .hebergements-title {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5em; /* Ajoute de l'espace sous le titre */
 }
 
 .hebergements-cards {
   display: flex; /* Utilise flexbox pour aligner les cartes */
-  flex-wrap: wrap; /* Passe à la ligne si nécessaire */
-  justify-content: space-between; /* Espacement uniforme entre les cartes */
+  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
+  justify-content: space-between; /* Espace uniforme entre les cartes */
 }
 
 .hebergements-cards a {
-  width: 30%; /* Largeur des liens de cartes */
-  margin: 0px 0px 2em 0px;
+  width: 30%; /* Définit la largeur des liens de carte */
+  margin: 0px 0px 2em 0px; /* Ajoute de l'espace vertical entre les cartes */
 }
 
 .hebergements-cards img {
-  width: 100%; /* Largeur des images dans les cartes */
+  width: 100%; /* Image prend toute la largeur de la carte */
   height: 136px; /* Hauteur fixe des images */
   border-top-left-radius: 20px; /* Arrondi en haut à gauche */
   border-top-right-radius: 20px; /* Arrondi en haut à droite */
 }
 
 .card-informations {
-  margin: 5px 0 5px 10px; /* Marge autour du texte */
+  margin: 5px 0 5px 10px; /* Ajoute des marges autour des informations */
 }
 
 .card-informations p {
-  margin-top: 5px;
+  margin-top: 5px; /* Ajoute un petit espace en haut des paragraphes */
 }
 
 .card-rating {
-  margin: 0px 0px 5px 10px; /* Marge autour de la note */
+  margin: 0px 0px 5px 10px; /* Ajoute des marges autour de la note */
 }
 
 /****** Populaires ***********/
 .populaires {
-  width: 32%;
+  width: 32%; /* Définit la largeur de la section "Populaires" */
 }
 
 .populaires-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* Aligne le titre horizontalement */
+  justify-content: space-between; /* Espace uniforme entre les éléments */
+  align-items: center; /* Aligne verticalement les éléments */
 }
 
 .populaires-cards .card {
-  display: flex;
-  margin-top: 33px;
+  display: flex; /* Organise les cartes horizontalement */
+  margin-top: 33px; /* Ajoute de l'espace au-dessus de chaque carte */
 }
 
 .populaires-cards img {
-  width: 33%;
-  height: 136px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  width: 33%; /* Définit la largeur de l'image à un tiers de la carte */
+  height: 136px; /* Hauteur fixe des images */
+  border-top-left-radius: 20px; /* Arrondi en haut à gauche */
+  border-bottom-left-radius: 20px; /* Arrondi en bas à gauche */
 }
 
 .populaires-cards .card-content {
-  width: 67%;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
+  width: 67%; /* Le contenu occupe les deux tiers restants */
+  padding-left: 15px; /* Ajoute de l'espace à gauche du contenu */
+  display: flex; /* Utilise flexbox pour organiser verticalement */
+  flex-direction: column; /* Organise les éléments en colonne */
+  justify-content: space-between; /* Espace uniforme verticalement */
+  box-sizing: border-box; /* Inclut les bordures dans la taille */
 }
 
 .populaires-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-top: 10px; /* Ajoute de l'espace en haut du titre */
+  margin-bottom: 4px; /* Réduit l'espace sous le titre */
 }
 
 .populaires-cards .card-subtitle {
-  margin: 0;
+  margin: 0; /* Supprime les marges */
 }
 
 .populaires-cards .card-rating {
-  margin-bottom: 5px;
+  margin-bottom: 5px; /* Ajoute de l'espace sous la note */
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/*********** Activités ***********/
+.activites {
+  display: flex; /* Utilise flexbox pour organiser les activités */
+  flex-direction: column; /* Organise les activités verticalement */
+  margin: 50px 20px 0px 20px; /* Ajoute des marges externes autour de la section */
+}
+
+.activites-title {
+  margin-bottom: 1.5em; /* Ajoute de l'espace sous le titre */
+}
+
+.activites-wrap {
+  display: flex; /* Aligne les cartes d'activités horizontalement */
+  justify-content: flex-start; /* Les cartes sont alignées à gauche */
+}
+
+.activites-card {
+  width: 25%; /* Définit la largeur des cartes */
+  margin-right: 2em; /* Ajoute de l'espace entre les cartes */
+  background-color: white; /* Fond blanc des cartes */
+  border-radius: 20px; /* Coins arrondis */
+  filter: drop-shadow(
+    0px 3px 15px rgba(0, 0, 0, 0.1)
+  ); /* Ajoute une ombre légère */
+}
+
+.activites-wrap img {
+  width: 100%; /* Image occupe toute la largeur de la carte */
+  height: 350px; /* Hauteur fixe des images */
+  object-fit: cover; /* Ajuste l'image sans la déformer */
+  border-top-left-radius: 20px; /* Arrondi en haut à gauche */
+  border-top-right-radius: 20px; /* Arrondi en haut à droite */
+}
+
+.activites-card p {
+  padding: 0; /* Supprime les marges internes */
+  margin: 1em; /* Ajoute une marge autour du texte */
+  font-weight: bold; /* Texte en gras */
+}
+
+/*********** Footer ***********/
+footer {
+  background-color: var(--main-bg-color); /* Fond de la section pied de page */
+  margin-top: 3em; /* Ajoute de l'espace au-dessus du footer */
+}
+
+footer nav {
+  display: flex; /* Utilise flexbox pour organiser les menus */
+  justify-content: flex-start; /* Aligne les éléments à gauche */
+  padding: 1.5em 0; /* Ajoute des marges internes verticales */
+}
+
+footer nav ul:nth-child(1),
+footer nav ul:nth-child(2) {
+  margin-right: 10em; /* Ajoute de l'espace entre les colonnes de menus */
+}
+
+footer nav ul li:first-child {
+  font-weight: bold; /* Met en gras le premier élément de chaque menu */
+}
+
+footer nav ul li {
+  margin-bottom: 1em; /* Ajoute de l'espace entre les éléments des menus */
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
-    flex-direction: column;
+    flex-direction: column; /* Les sections passent en colonne */
   }
 
   .hebergements {
-    width: 100%;
+    width: 100%; /* Prend toute la largeur disponible */
   }
 
   .populaires {
-    width: 100%;
-    margin-top: 50px;
+    width: 100%; /* Prend toute la largeur disponible */
+    margin-top: 50px; /* Ajoute de l'espace au-dessus de la section */
   }
 
   .populaires-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex; /* Aligne les cartes horizontalement */
+    flex-direction: row; /* Les cartes restent alignées en ligne */
+    justify-content: space-between; /* Espace uniforme entre les cartes */
   }
 
   .populaires-cards a {
-    width: 30%;
+    width: 30%; /* Les cartes occupent 30% de la largeur */
   }
 
   .populaires-cards .card-title {
-    font-size: 14px;
+    font-size: 14px; /* Réduit la taille du titre */
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 13px; /* Réduit la taille du sous-titre */
   }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  /* Placez ici les styles pour les petits écrans */
 }
