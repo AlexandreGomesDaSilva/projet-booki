@@ -276,9 +276,47 @@ p {
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hébergements ***********/
 .hebergements {
   width: 65%;
+}
+
+.hebergements-showmore {
+  font-weight: bold;
+}
+
+.hebergements-title {
+  margin-bottom: 1.5em;
+}
+
+.hebergements-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hebergements-cards a {
+  width: 30%;
+  margin: 0px 0px 2em 0px;
+}
+
+.hebergements-cards img {
+  width: 100%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-informations {
+  margin: 5px 0 5px 10px;
+}
+
+.card-informations p {
+  margin-top: 5px;
+}
+
+.hebergements-cards .card-rating {
+  margin: 0px 0px 5px 10px;
 }
 
 /****** Populaires ***********/
@@ -330,7 +368,7 @@ p {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023.98px) {
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -365,5 +403,59 @@ p {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements-and-populaires section {
+    background-color: white;
+    border-radius: 0;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+
+  .hebergements-and-populaires .populaires {
+    background-color: var(--main-bg-color);
+    margin-top: 0;
+  }
+
+  .hebergements {
+    width: 100%;
+    order: 2;
+  }
+
+  .hebergements-cards a {
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+
+  .hebergements-title {
+    margin: 1em 0;
+  }
+
+  .populaires {
+    order: 1;
+    width: 100%;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .populaires-cards a {
+    width: 100%;
+  }
+
+  .populaires-cards .card {
+    margin-top: 1em;
+  }
+
+  .populaires-title {
+    margin: 0.5em 0 0 0;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
 }
