@@ -408,7 +408,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
   .activites-card img {
-    height: 200px;
+    height: 175px;
   }
 
   .activites-card h3 {
@@ -427,7 +427,7 @@ p {
   }
 
   .activites-card img {
-    height: 200px;
+    height: 125px;
   }
 
   .activites-card h3 {
