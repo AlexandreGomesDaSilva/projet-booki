@@ -136,11 +136,11 @@ header > h1 {
 }
 
 /****** Search Bar ***********/
-.search-bar-div {
+.search-bar-container {
   margin-top: 2em; /* Margin above search bar */
 }
 
-.search-bar-div > h2,
+.search-bar-container > h2,
 p {
   margin-bottom: 0.25em; /* Margin below search bar elements */
 }
@@ -182,15 +182,15 @@ p {
 }
 
 @media (min-width: 319.98px) and (max-width: 767.98px) {
-  .search-bar-div {
+  .search-bar-container {
     margin: 1em 1em 2em 1em; /* Adjust margin on small screens */
   }
 
-  .search-bar-div > h2 {
+  .search-bar-container > h2 {
     font-size: 18px; /* Adjust font size on small screens */
   }
 
-  .search-bar-div p {
+  .search-bar-container p {
     font-size: 14px; /* Adjust font size on small screens */
   }
 
