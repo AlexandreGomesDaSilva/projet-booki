@@ -194,6 +194,12 @@ p {
     font-size: 14px; /* Adjust font size on small screens */
   }
 
+  .search-bar input {
+    flex: 1; /* Make input flexible */
+    width: auto;
+    max-width: 100%;
+  }
+
   .search-bar i:nth-child(3) {
     display: block; /* Show third icon on small screens */
   }
@@ -525,6 +531,8 @@ footer nav ul li {
 @media (min-width: 319.98px) and (max-width: 767.98px) {
   .hebergements-and-populaires {
     flex-direction: column; /* Stack sections vertically */
+    align-items: stretch; /* Stretch items vertically */
+    width: 100%;
   }
 
   .hebergements-and-populaires section {
@@ -532,6 +540,7 @@ footer nav ul li {
     border-radius: 0;
     padding: 1em;
     box-sizing: border-box; /* Section styling */
+    width: 100%;
   }
 
   .hebergements-and-populaires .populaires {
